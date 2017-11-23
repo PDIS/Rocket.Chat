@@ -5,6 +5,8 @@ set -euvo pipefail
 # Make meteor bundle
 export NODE_ENV=production
 sudo chown vagrant:vagrant /home/vagrant -R
+sudo chown vagrant:vagrant /home/vagrant/.meteor/packages -R
+sudo chown vagrant:vagrant /tmp -R
 cd /opt/app
 meteor npm install --production
 meteor build --directory /home/vagrant/
