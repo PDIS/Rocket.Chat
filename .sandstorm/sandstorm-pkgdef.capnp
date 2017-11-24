@@ -17,7 +17,7 @@ const pkgdef :Spk.PackageDefinition = (
 		# This manifest is included in your app package to tell Sandstorm
 		# about your app.
 
-		appTitle = (defaultText = "Rocket.Chat"),
+		appTitle = (defaultText = "Rocket.Chat(PDIS)"),
 
 		appVersion = 62,  # Increment this for every release.
 
@@ -27,7 +27,7 @@ const pkgdef :Spk.PackageDefinition = (
 
 		actions = [
 			# Define your "new document" handlers here.
-			( title = (defaultText = "Rocket.Chat"),
+			( title = (defaultText = "Rocket.Chat(PDIS)"),
 				command = .myCommand
 				# The command to run when starting for the first time. (".myCommand"
 				# is just a constant defined at the bottom of the file.)
