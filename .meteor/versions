@@ -64,6 +64,7 @@ jquery@1.11.10
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
 keepnox:perfect-scrollbar@0.6.8
+kenton:accounts-sandstorm@0.7.0
 konecty:change-case@2.3.0
 konecty:delayed-task@1.0.0
 konecty:mongo-counter@0.0.5_3
@@ -151,7 +152,6 @@ rocketchat:file@0.0.1
 rocketchat:file-upload@0.0.1
 rocketchat:github-enterprise@0.0.1
 rocketchat:gitlab@0.0.1
-rocketchat:google-vision@0.0.1
 rocketchat:highlight-words@0.0.1
 rocketchat:i18n@0.0.1
 rocketchat:iframe-login@1.0.0
@@ -189,8 +189,6 @@ rocketchat:otr@0.0.1
 rocketchat:postcss@1.0.0
 rocketchat:push-notifications@0.0.1
 rocketchat:reactions@0.0.1
-rocketchat:sandstorm@0.0.1
-rocketchat:slackbridge@0.0.1
 rocketchat:slashcommands-archive@0.0.1
 rocketchat:slashcommands-asciiarts@0.0.1
 rocketchat:slashcommands-create@0.0.1
