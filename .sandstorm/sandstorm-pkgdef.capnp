@@ -8,8 +8,8 @@ using Spk = import "/sandstorm/package.capnp";
 const pkgdef :Spk.PackageDefinition = (
 	# The package definition. Note that the spk tool looks specifically for the
 	# "pkgdef" constant.
-
-	id = "vfnwptfn02ty21w715snyyczw0nqxkv3jvawcah10c6z7hj1hnu0",
+    id = "k21w9r31spyjp4ggkjphvaat329vrshp7j15gwqtusk26541qjdh",
+	#id = "vfnwptfn02ty21w715snyyczw0nqxkv3jvawcah10c6z7hj1hnu0",
 	# Your app ID is actually its public key. The private key was placed in
 	# your keyring. All updates must be signed with the same key.
 
@@ -27,7 +27,7 @@ const pkgdef :Spk.PackageDefinition = (
 
 		actions = [
 			# Define your "new document" handlers here.
-			( title = (defaultText = "New Rocket.Chat"),
+			( title = (defaultText = "Rocket.Chat"),
 				command = .myCommand
 				# The command to run when starting for the first time. (".myCommand"
 				# is just a constant defined at the bottom of the file.)
