@@ -3,6 +3,7 @@
 RocketChat.Sandstorm.offerUiView = function() {};
 
 if (process.env.SANDSTORM === '1') {
+/*
 	const Capnp = Npm.require('capnp');
 	const Powerbox = Npm.require('sandstorm/powerbox.capnp');
 	const Grain = Npm.require('sandstorm/grain.capnp');
@@ -45,4 +46,5 @@ if (process.env.SANDSTORM === '1') {
 				this.connection.sandstormSessionId());
 		}
 	});
+*/
 }

@@ -9,6 +9,7 @@ if (process.env.SANDSTORM === '1') {
 	};
 
 	RocketChat.Sandstorm.notify = function(message, userIds, caption, type) {
+		/*
 		const sessionId = message.sandstormSessionId;
 		if (!sessionId) {
 			return;
@@ -35,5 +36,6 @@ if (process.env.SANDSTORM === '1') {
 		}
 
 		return waitPromise(httpBridge.getSessionContext(sessionId).context.activity(activity));
+		*/
 	};
 }
