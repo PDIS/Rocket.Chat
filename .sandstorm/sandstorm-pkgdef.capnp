@@ -27,7 +27,7 @@ const pkgdef :Spk.PackageDefinition = (
 
 		actions = [
 			# Define your "new document" handlers here.
-			( title = (defaultText = "Rocket.Chat(PDIS)"),
+			( title = (defaultText = "Chat"),
 				command = .myCommand
 				# The command to run when starting for the first time. (".myCommand"
 				# is just a constant defined at the bottom of the file.)
@@ -47,13 +47,13 @@ const pkgdef :Spk.PackageDefinition = (
 				market = (svg = embed "rocket.chat-150.svg"),
 			),
 
-			website = "https://rocket.chat",
-			codeUrl = "https://github.com/RocketChat/Rocket.Chat",
+			website = "https://github.com/peterlee0127",
+			codeUrl = "https://github.com/peterlee0127/Rocket.Chat",
 			license = (openSource = mit),
 			categories = [communications, productivity, office, social, developerTools],
 
 			author = (
-				contactEmail = "team@rocket.chat",
+				contactEmail = "peterlee0127@gmail.com",
 				pgpSignature = embed "pgp-signature",
 				upstreamAuthor = "Rocket.Chat",
 			),
