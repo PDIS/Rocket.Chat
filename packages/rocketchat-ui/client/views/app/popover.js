@@ -1,4 +1,40 @@
 /* globals popover isRtl */
+window.addEventListener('message', function(event) {
+  if (event.source !== window.parent) {
+    // SECURITY: ignore postMessages that didn't come from the parent frame.
+    return;
+  }
+  var response = event.data;
+  if (response.rpcId !== 1) {
+    return;
+  }
+  if (response.error) {
+    alert(response.error);
+    return;
+  }
+  if (response.canceled) {
+    return;
+  }
+  $.post("/api/v1/claimToken",
+    {
+        token:response.token
+    },
+    function(data, status){
+        // console.log(data);
+        console.log(status);
+    });
+});
+
+function powerBoxRequest() {
+	//EA1QAQEAABEBF1EEAQH/x80lxnnjecgAQAMRCeIAAf9odHRwczovLwJnYXRld2F5LnJvY2tldC5jB2hhdA==   //rocket.chat push gateway
+	window.parent.postMessage({
+		powerboxRequest: {
+			rpcId: 1,
+			query: ['EA1QAQEAABEBF1EEAQH/x80lxnnjecgAQAMRCeIAAf9odHRwczovLwJnYXRld2F5LnJvY2tldC5jB2hhdA=='],
+			saveLabel: {defaultText: 'Enable Powerbox for Push Gateway'}
+		}
+	}, '*');
+}
 
 this.popover = {
 	renderedPopover: null,
@@ -152,13 +188,8 @@ Template.popover.events({
 				SideNav.openFlex();
 				FlowRouter.go('account');
 				break;
-			case 'logout':
-				const user = Meteor.user();
-				Meteor.logout(() => {
-					RocketChat.callbacks.run('afterLogoutCleanUp', user);
-					Meteor.call('logoutCleanUp', user);
-					FlowRouter.go('home');
-				});
+			case 'powerbox':
+				powerBoxRequest();
 				break;
 			case 'administration':
 				SideNav.setFlex('adminFlex');

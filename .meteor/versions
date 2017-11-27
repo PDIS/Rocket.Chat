@@ -1,11 +1,6 @@
 accounts-base@1.3.4
-accounts-facebook@1.2.1
-accounts-github@1.3.0
-accounts-google@1.2.0
-accounts-meteor-developer@1.3.0
 accounts-oauth@1.1.15
 accounts-password@1.4.0
-accounts-twitter@1.3.0
 aldeed:simple-schema@1.5.3
 allow-deny@1.0.9
 autoupdate@1.3.12
@@ -25,6 +20,7 @@ check@1.2.5
 coffeescript@1.12.7_1
 coffeescript-compiler@1.12.7_1
 dandv:caret-position@2.1.1
+dburles:google-maps@1.1.5
 ddp@1.3.1
 ddp-client@2.1.3
 ddp-common@1.2.9
@@ -47,7 +43,6 @@ facebook-oauth@1.3.2
 fastclick@1.0.13
 francocatena:status@1.5.3
 geojson-utils@1.0.10
-github-oauth@1.2.0
 google-oauth@1.2.4
 hot-code-push@1.0.4
 html-tools@1.0.11
@@ -80,7 +75,6 @@ matb33:collection-hooks@0.8.4
 mdg:validation-error@0.5.1
 meteor@1.7.2
 meteor-base@1.1.0
-meteor-developer-oauth@1.2.0
 meteorhacks:inject-initial@1.0.4
 meteorhacks:meteorx@1.4.1
 meteorspark:util@0.2.0
@@ -136,13 +130,12 @@ rocketchat:bot-helpers@0.0.1
 rocketchat:cas@1.0.0
 rocketchat:channel-settings@0.0.1
 rocketchat:channel-settings-mail-messages@0.0.1
+rocketchat:chatops@0.0.1
 rocketchat:colors@0.0.1
-rocketchat:cors@0.0.1
 rocketchat:crowd@1.0.0
 rocketchat:custom-oauth@1.0.0
 rocketchat:custom-sounds@1.0.0
 rocketchat:dolphin@0.0.2
-rocketchat:drupal@0.0.1
 rocketchat:emoji@1.0.0
 rocketchat:emoji-custom@1.0.0
 rocketchat:emoji-emojione@0.0.1
@@ -189,6 +182,7 @@ rocketchat:otr@0.0.1
 rocketchat:postcss@1.0.0
 rocketchat:push-notifications@0.0.1
 rocketchat:reactions@0.0.1
+rocketchat:sandstorm@0.0.1
 rocketchat:slashcommands-archive@0.0.1
 rocketchat:slashcommands-asciiarts@0.0.1
 rocketchat:slashcommands-create@0.0.1
@@ -207,7 +201,6 @@ rocketchat:slashcommands-unarchive@0.0.1
 rocketchat:slider@0.0.1
 rocketchat:smarsh-connector@0.0.1
 rocketchat:sms@0.0.1
-rocketchat:spotify@0.0.1
 rocketchat:statistics@0.0.1
 rocketchat:streamer@0.5.0
 rocketchat:theme@0.0.1

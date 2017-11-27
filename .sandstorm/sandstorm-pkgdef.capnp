@@ -95,6 +95,19 @@ const pkgdef :Spk.PackageDefinition = (
 				(name = "privateMessage", verbPhrase = (defaultText = "sent private message"), requiredPermission = (explicitList = void)),
 			]
 		),
+        powerboxApis = [
+        (
+        name = "rocket.chat push gateway",
+        displayInfo = (
+          title = (defaultText = "Rocket.Chat Push Gateway"),
+        ),
+        path = "/",
+        tag = (
+          canonicalUrl = "https://gateway.rocket.chat"
+        ),
+            permissions = [true, true],  # read and write
+        )
+        ],
 		saveIdentityCaps = true,
 	),
 );

@@ -106,10 +106,10 @@ Template.accountBox.events({
 									id: 'account'
 								},
 								{
-									icon: 'sign-out',
-									name: t('Logout'),
+									icon: 'circle',
+									name: t('Powerbox'),
 									type: 'open',
-									id: 'logout'
+									id: 'powerbox'
 								}
 							])
 						}

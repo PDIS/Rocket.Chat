@@ -72,13 +72,23 @@ Meteor.methods({
 
 function sendPush(service, token, options, tries = 0) {
 	const data = {
-		data: {
-			token,
-			options
-		}
+		token,
+		options
 	};
-
-	return HTTP.post(`${ RocketChat.settings.get('Push_gateway') }/push/${ service }/send`, data, function(error, response) {
+	//`${ RocketChat.settings.get('Push_gateway') }/push/${ service }/send`
+	const pushURL = "http://http-bridge/push/"+service+"/send";
+	const fs = require('fs');
+	const powerBoxToken = fs.readFileSync("/var/token.txt",'utf8');
+	const authString = "Bearer "+powerBoxToken;
+	const option = {
+		'headers':{
+			'proxy': process.env.HTTP_PROXY,
+			'Authorization': authString
+		},
+		'data': data
+	};
+	return HTTP.call('POST', pushURL, option, function(error, response) {
+		// console.log("response:"+response);
 		if (response && response.statusCode === 406) {
 			console.log('removing push token', token);
 			Push.appCollection.remove({
