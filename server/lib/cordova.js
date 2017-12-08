@@ -88,7 +88,6 @@ function sendPush(service, token, options, tries = 0) {
 		'data': data
 	};
 	return HTTP.call('POST', pushURL, option, function(error, response) {
-		// console.log("response:"+response);
 		if (response && response.statusCode === 406) {
 			console.log('removing push token', token);
 			Push.appCollection.remove({
